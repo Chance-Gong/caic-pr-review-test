@@ -1,0 +1,8 @@
+{
+  "name": "@example/ai-chat-components",
+  "version": "1.0.0",
+  "dependencies": {
+    "@carbon/web-components": "^2.0.0",
+    "lit": "^3.1.0"
+  }
+}

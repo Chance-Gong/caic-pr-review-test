@@ -1,0 +1,5 @@
+{
+  "name": "caic-pr-review-test",
+  "private": true,
+  "workspaces": ["packages/*"]
+}
