@@ -8,10 +8,12 @@ export class MessageList extends LitElement {
   messages: string[] = [];
 
   private readonly onResize = () => this.requestUpdate();
+  private readonly onScroll = () => this.requestUpdate();
 
   connectedCallback() {
     super.connectedCallback();
     window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll);
   }
 
   disconnectedCallback() {
