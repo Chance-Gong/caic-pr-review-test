@@ -1,4 +1,15 @@
 # caic-pr-review-test
 
-Scratch repo for evaluating Carbon Monitor's carbon-ai-chat review profile.
-The files are small stand-ins that mirror the carbon-ai-chat layout. Nothing here builds or runs.
+Test repository for the Carbon Monitor caic eval.
+
+## Usage
+
+```html
+<example-chat-button>Send</example-chat-button>
+<example-message-list></example-message-list>
+```
+
+## Components
+
+- `example-chat-button` — a Carbon Web Components button wrapper
+- `example-message-list` — a list of formatted messages
