@@ -1,0 +1,6 @@
+{
+  "buttons_send": "Envoyer",
+  "buttons_cancel": "Annuler",
+  "errors_requestFailed": "Nous n'avons pas pu envoyer votre message. V\u00e9rifiez votre connexion et r\u00e9essayez.",
+  "messages_empty": "Pas encore de messages. Posez une question pour commencer."
+}
