@@ -2,8 +2,9 @@
 @use '@carbon/styles/scss/spacing' as *;
 
 .#{$prefix}--example-chat-button {
-  margin-inline-start: $spacing-05;
-  padding-block: $spacing-03;
+  margin-left: $spacing-05;
+  padding-top: $spacing-03;
+  padding-bottom: $spacing-03;
 }
 
 .#{$prefix}--example-chat-button__label {
