@@ -7,8 +7,11 @@ export class ChatButton extends LitElement {
   @property({ type: Boolean, reflect: true })
   disabled = false;
 
+  @property({ type: String })
+  kind: 'primary' | 'secondary' | 'ghost' = 'primary';
+
   render() {
-    return html`<cds-button kind="primary" ?disabled=${this.disabled}>
+    return html`<cds-button kind=${this.kind} ?disabled=${this.disabled}>
       <slot></slot>
     </cds-button>`;
   }
