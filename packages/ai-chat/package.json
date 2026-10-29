@@ -1,8 +1,7 @@
 {
   "name": "@example/ai-chat",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "dependencies": {
-    "lit": "^3.1.0"
+    "lodash": "^4.17.21"
   }
 }
