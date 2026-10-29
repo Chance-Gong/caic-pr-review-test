@@ -7,9 +7,20 @@ export class ChatButton extends LitElement {
   @property({ type: Boolean, reflect: true })
   disabled = false;
 
+  @property({ type: String })
+  label = '';
+
+  private formatLabel(text: string): string {
+    const trimmed = text.trim();
+    if (trimmed.length > 30) {
+      return trimmed.slice(0, 29) + '\u2026';
+    }
+    return trimmed;
+  }
+
   render() {
     return html`<cds-button kind="primary" ?disabled=${this.disabled}>
-      <slot></slot>
+      ${this.formatLabel(this.label)}
     </cds-button>`;
   }
 }
