@@ -4,8 +4,9 @@
 .#{$prefix}--example-chat-button {
   margin-inline-start: $spacing-05;
   padding-block: $spacing-03;
-}
 
-.#{$prefix}--example-chat-button__label {
-  padding-inline: $spacing-05;
+  .#{$prefix}--example-chat-button__label {
+    padding-inline: $spacing-05;
+    font-weight: bold;
+  }
 }
