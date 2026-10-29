@@ -4,3 +4,4 @@ components:
   - name: example-chat-button
     attributes:
       - disabled
+      - loading

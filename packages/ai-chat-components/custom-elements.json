@@ -4,7 +4,9 @@
     {
       "kind": "javascript-module",
       "path": "src/components/chat-button/chat-button.ts",
-      "declarations": [{ "kind": "class", "name": "ChatButton", "tagName": "example-chat-button" }]
+      "declarations": [
+        { "kind": "class", "name": "ChatButton", "tagName": "example-chat-button" }
+      ]
     }
   ]
 }
