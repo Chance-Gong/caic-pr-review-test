@@ -3,12 +3,10 @@ export interface MessageInput {
   maxLength?: number;
 }
 
-const DEFAULT_MAX_LENGTH = 500;
-
-export function formatMessage({ text, maxLength = DEFAULT_MAX_LENGTH }: MessageInput): string {
+export function formatMessage({ text, maxLength }: MessageInput): string {
   const trimmed = text.trim();
-  if (trimmed.length <= maxLength) {
-    return trimmed;
+  if (maxLength !== undefined && trimmed.length > maxLength) {
+    return `${trimmed.slice(0, maxLength - 1)}\u2026`;
   }
-  return `${trimmed.slice(0, maxLength - 1)}…`;
+  return trimmed;
 }
