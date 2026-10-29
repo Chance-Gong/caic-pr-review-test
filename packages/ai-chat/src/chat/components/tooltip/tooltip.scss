@@ -1,0 +1,21 @@
+@use '@carbon/styles/scss/config' as *;
+@use '@carbon/styles/scss/spacing' as *;
+@use '@carbon/styles/scss/motion' as *;
+
+.#{$prefix}--example-tooltip {
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--cds-background-inverse);
+  color: var(--cds-text-inverse);
+  border-radius: 2px;
+  padding-block: $spacing-02;
+  padding-inline: $spacing-04;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity motion(standard, productive) $duration-fast-02;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
