@@ -1,6 +1,6 @@
 {
   "buttons_send": "Send",
   "buttons_cancel": "Cancel",
-  "errors_requestFailed": "We couldn't send your message. Check your connection and try again.",
+  "errors_requestFailed": "Oops! Couldn't send that. Check your wifi and try again?",
   "messages_empty": "No messages yet. Type a question to get started."
 }
