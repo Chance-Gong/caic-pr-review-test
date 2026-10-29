@@ -8,7 +8,7 @@ export class ChatButton extends LitElement {
   disabled = false;
 
   render() {
-    return html`<cds-button kind="primary" ?disabled=${this.disabled}>
+    return html`<cds-button kind="primary" icon-placement="right" ?disabled=${this.disabled}>
       <slot></slot>
     </cds-button>`;
   }
